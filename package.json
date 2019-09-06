@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-fichos-operaciones",
+  "version": "1.0.0",
+  "description": "My legendary Nuxt.js project",
+  "author": "Oscar Montoya",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@mdi/font": "^4.3.95",
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0",
+    "roboto-fontface": "^0.10.0",
+    "vee-validate": "^3.0.4",
+    "vue-perfect-scrollbar": "^0.2.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.6.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2"
+  }
+}

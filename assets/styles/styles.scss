@@ -1,0 +1,100 @@
+// Override default vars
+
+// Example map-deep-get($headings, 'h1', 'size');
+
+@import '~vuetify/src/styles/settings/_index';
+
+/*** GENERAL ***/
+h1 {
+  font-size: 48px;
+  font-weight: map-get($font-weights, thin);
+  letter-spacing: -1.5;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: map-get($font-weights, light);
+  letter-spacing: -0.5;
+}
+h3 {
+  font-size: 24px;
+  font-weight: map-get($font-weights, light);
+  letter-spacing: normal;
+}
+h4 {
+  font-size: 20px;
+  font-weight: map-get($font-weights, light);
+  letter-spacing: normal;
+}
+h5 {
+  font-size: 16px;
+  font-weight: map-get($font-weights, regular);
+  letter-spacing: normal;
+}
+
+/*** LAYOUT ***/
+
+/* Drawer menu */
+.v-navigation-drawer.primary {
+  .v-list-group__header {
+    color: #fff;
+  }
+
+  .v-list-item--active:not(.v-list-group__header) {
+    color: #fff;
+    background-color: rgba(100, 217, 215, 0.1) !important;
+    box-shadow: inset 0px -1px 0px rgba(100, 217, 215, 0.1),
+      inset 0px 1px 0px rgba(100, 217, 215, 0.1);
+
+    .v-icon {
+      color: #64d9d7 !important;
+    }
+    &::before {
+      background-color: transparent !important;
+    }
+  }
+
+  // .theme--dark.v-list .v-list__group__header:hover {
+  //   background: none;
+  // }
+
+  a:hover {
+    background: rgba(100, 217, 215, 0.1) !important;
+    box-shadow: inset 0px -1px 0px rgba(100, 217, 215, 0.1),
+      inset 0px 1px 0px rgba(100, 217, 215, 0.1);
+  }
+
+  .v-list-group--active {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.1),
+      inset 0px -2px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 0px rgba(255, 255, 255, 0.05),
+      inset 0px 4px 0px rgba(0, 0, 0, 0.1), inset 0px 2px 0px rgba(0, 0, 0, 0.1),
+      0px -1px 0px rgba(255, 255, 255, 0.05);
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+// Transitions
+.page-enter {
+  transition: all 0.5s;
+  transform: translate(-60px, 0);
+  opacity: 0;
+}
+
+.page-enter-to {
+  transition: all 0.5s;
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+
+.page-leave-to {
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translate(60px, 0);
+}
