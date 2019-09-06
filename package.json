@@ -18,7 +18,8 @@
     "nuxt": "^2.0.0",
     "roboto-fontface": "^0.10.0",
     "vee-validate": "^3.0.4",
-    "vue-perfect-scrollbar": "^0.2.0"
+    "vue-perfect-scrollbar": "^0.2.0",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
